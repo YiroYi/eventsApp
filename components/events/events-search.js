@@ -1,9 +1,20 @@
+import { useRef } from 'react';
+
 import Button from '../ui/button';
 import classes from './events-search.module.css';
 
 const EventSearcher = props => {
+  const yearInputRef = useRef();
+  const monthInputRef = useRef();
+
+  const submitHandler = (event) => {
+    event.event.preventDefault();
+
+
+  }
+
   return (
-    <form className={classes.form}>
+    <form className={classes.form} onSubmit={submitHandler}>
       <div className={classes.controls}>
         <div className={classes.control}>
           <label htmlFor="year">Year</label>
