@@ -29,6 +29,16 @@ const DUMMY_EVENTS = [
     image: 'https://source.unsplash.com/random',
     isFeatured: true,
   },
+  {
+    id: 'e4',
+    title: '9 Ball tournament',
+    description:
+      'You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.',
+    location: 'My Street 12, 10115 Broke City',
+    date: '2022-04-10',
+    image: 'https://source.unsplash.com/random',
+    isFeatured: true,
+  },
 ];
 
 export function getFeaturedEvents() {
