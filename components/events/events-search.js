@@ -8,7 +8,7 @@ const EventSearcher = props => {
   const monthInputRef = useRef();
 
   const submitHandler = (event) => {
-    event.event.preventDefault();
+    event.preventDefault();
 
     const selectedYear = yearInputRef.current.value;
     const selectedMonth = monthInputRef.current.value;
